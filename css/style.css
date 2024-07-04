@@ -91,9 +91,9 @@
 
 .container {
     max-width: 80rem;
-    height: 90vh;
+    height: auto;
     margin: auto;
-    padding: 20px;
+    padding: 30px;
 }
 .grid {
     display: grid;
@@ -105,7 +105,6 @@
 .card {
     border-radius: 10px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    padding-bottom: 1.5rem;
 }
 .card:hover {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
@@ -117,7 +116,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 4rem 4rem 0 4rem;
+    padding: 1.5rem 4rem 0 4rem;
 }
 .card-level {
     position: absolute;
@@ -149,6 +148,27 @@
     font-weight: 400;
     color: #2f2f2f;
     text-align: center;
+}
+.card-contact {
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2f2f2f;
+    text-align: center;
+}
+.card-contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 18px;
+    color: #2f2f2f;
+    text-align: center;
+}
+.card-contact-info-text {
+    font-size: 16px;
+    color: #2f2f2f;
+    margin-left: 0.5rem;
 }
 
 .items-flex {
@@ -203,7 +223,7 @@
 /* media queries */
 @media (min-width: 640px) { 
     .container {
-        padding-top: 30px;
+        padding: 30px;
     }
     .profile-title {
         text-align: left;
@@ -220,5 +240,6 @@
     
     .grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6rem;
     }
 }
